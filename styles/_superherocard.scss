@@ -1,0 +1,110 @@
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  margin-top: 75px;
+  color: white;
+}
+
+.superhero-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-top: 70px;
+  .superhero-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-color: white;
+    margin-bottom: 40px;
+    img {
+      width: 60%;
+      margin: 5px 0;
+      border-radius: 30px;
+    }
+    .name {
+      padding: 5px 18px;
+      background-color: #3585ee;
+      margin: 30px 0;
+      box-sizing: border-box;
+      font-weight: 500;
+      color: white;
+      text-align: center;
+    }
+    .real-name {
+      margin-top: 30px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .f-appear {
+      box-sizing: border-box;
+      text-align: center;
+      padding: 0 10px;
+    }
+    .alignment {
+      box-sizing: border-box;
+      margin: 0 0 30px 0;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .superhero-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    .superhero-card {
+      width: 38%;
+      margin: 30px 30px;
+      height: 725px;
+      img {
+        width: 80%;
+      }
+      .name,
+      .real-name,
+      .f-appear,
+      .alignment {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1281px) {
+  .superhero-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    .superhero-card {
+      width: 25%;
+      margin: 30px 30px;
+      height: 725px;
+      img {
+        width: 60%;
+      }
+      .name,
+      .real-name,
+      .f-appear,
+      .alignment {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

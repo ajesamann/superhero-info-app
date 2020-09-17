@@ -1,0 +1,40 @@
+@import "superherocard";
+@import "footer";
+
+$font: "Oswald", sans-serif;
+
+body {
+  font-family: $font;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: #161a1d;
+  padding-top: 85px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+
+.results-text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444444;
+}
+
+hr {
+  width: 65%;
+}
+
+@media (min-width: 768px) {
+  .results-text {
+    font-size: 1.1rem;
+  }
+}

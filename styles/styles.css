@@ -1,0 +1,249 @@
+main {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.3rem;
+  margin-top: 75px;
+  color: white;
+}
+
+.superhero-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  padding-top: 70px;
+}
+
+.superhero-cards .superhero-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75%;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  margin-bottom: 40px;
+}
+
+.superhero-cards .superhero-card img {
+  width: 60%;
+  margin: 5px 0;
+  border-radius: 30px;
+}
+
+.superhero-cards .superhero-card .name {
+  padding: 5px 18px;
+  background-color: #3585ee;
+  margin: 30px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+
+.superhero-cards .superhero-card .real-name {
+  margin-top: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.superhero-cards .superhero-card .f-appear {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.superhero-cards .superhero-card .alignment {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .superhero-cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80%;
+  }
+  .superhero-cards .superhero-card {
+    width: 38%;
+    margin: 30px 30px;
+    height: 725px;
+  }
+  .superhero-cards .superhero-card img {
+    width: 80%;
+  }
+  .superhero-cards .superhero-card .name,
+  .superhero-cards .superhero-card .real-name,
+  .superhero-cards .superhero-card .f-appear,
+  .superhero-cards .superhero-card .alignment {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1281px) {
+  .superhero-cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .superhero-cards .superhero-card {
+    width: 25%;
+    margin: 30px 30px;
+    height: 725px;
+  }
+  .superhero-cards .superhero-card img {
+    width: 60%;
+  }
+  .superhero-cards .superhero-card .name,
+  .superhero-cards .superhero-card .real-name,
+  .superhero-cards .superhero-card .f-appear,
+  .superhero-cards .superhero-card .alignment {
+    font-size: 1.2rem;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px -14px 27px -16px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -14px 27px -16px rgba(0, 0, 0, 0.75);
+}
+
+footer input {
+  border: none;
+  height: 100%;
+  width: 75%;
+  padding-left: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  outline: none;
+}
+
+footer button {
+  width: 25%;
+  height: 100%;
+  background-color: #e5383b;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  footer input,
+  footer button {
+    font-size: 1.1rem;
+  }
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: #161a1d;
+  padding-top: 85px;
+  padding-bottom: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.results-text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #444444;
+}
+
+hr {
+  width: 65%;
+}
+
+@media (min-width: 768px) {
+  .results-text {
+    font-size: 1.1rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
