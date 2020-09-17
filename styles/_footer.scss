@@ -18,6 +18,9 @@ footer {
     font-family: $font;
     font-size: 1rem;
     outline: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
   }
   button {
     width: 25%;
