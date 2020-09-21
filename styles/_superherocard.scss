@@ -16,6 +16,27 @@ main {
   color: white;
 }
 
+.good {
+  background-color: rgb(44, 182, 44);
+  color: white;
+  padding: 5px 25px;
+  border-radius: 5px;
+}
+
+.bad {
+  background-color: rgb(199, 31, 31);
+  color: white;
+  padding: 5px 25px;
+  border-radius: 5px;
+}
+
+.neutral {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 5px 25px;
+  border-radius: 5px;
+}
+
 .superhero-cards {
   display: flex;
   flex-direction: column;
@@ -36,11 +57,11 @@ main {
     margin-bottom: 40px;
     img {
       width: 60%;
-      margin: 5px 0;
+      margin: 15px 0;
       border-radius: 30px;
     }
     .name {
-      padding: 5px 18px;
+      padding: 7px 23px;
       background-color: #3585ee;
       margin: 30px 0;
       box-sizing: border-box;
@@ -60,8 +81,15 @@ main {
     }
     .alignment {
       box-sizing: border-box;
-      margin: 0 0 30px 0;
+      margin: 7px 0 30px 0;
       text-align: center;
+    }
+    .view-stats-btn {
+      margin-bottom: 30px;
+      margin-top: 10px;
+      border: 1px solid black;
+      padding: 6px 17px;
+      cursor: pointer;
     }
   }
 }
@@ -74,9 +102,9 @@ main {
     .superhero-card {
       width: 38%;
       margin: 30px 30px;
-      height: 725px;
+      height: 755px;
       img {
-        width: 80%;
+        width: 60%;
       }
       .name,
       .real-name,
@@ -95,9 +123,9 @@ main {
     .superhero-card {
       width: 25%;
       margin: 30px 30px;
-      height: 725px;
+      height: 755px;
       img {
-        width: 60%;
+        width: 45%;
       }
       .name,
       .real-name,

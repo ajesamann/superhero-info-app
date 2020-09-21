@@ -38,6 +38,23 @@ searchBtn.click(() => {
           );
           let info = data.results;
           info.forEach((hero) => {
+            //dynamic styling
+            goodOrBad = () => {
+              if (hero.biography.alignment == "good") {
+                return "good";
+              } else if (hero.biography.alignment == "bad") {
+                return "bad";
+              } else if (hero.biography.alignment == "neutral") {
+                return "neutral";
+              }
+            };
+
+            //dont show the whole bio if it's too long
+            let newBiography =
+              hero.biography["first-appearance"].length > 45
+                ? hero.biography["first-appearance"].slice(0, 45) + "..."
+                : hero.biography["first-appearance"];
+
             //the info for each villain or hero
             $(".superhero-cards").append(
               `<div class="superhero-card">
@@ -47,9 +64,10 @@ searchBtn.click(() => {
                 hero.biography["full-name"]
               }</div>
               <hr>
-              <div class="f-appear">${hero.biography["first-appearance"]}</div>
+              <div class="f-appear">${newBiography}</div>
               <hr>
-              <div class="alignment">Alignment: ${hero.biography.alignment.toUpperCase()}</div>
+              <div class="alignment ${goodOrBad()}">Alignment: ${hero.biography.alignment.toUpperCase()}</div>
+              <div class='view-stats-btn'>View Powerstats ></div>
             </div>`
             );
           });

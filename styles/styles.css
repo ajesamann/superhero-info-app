@@ -6,14 +6,14 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .error {
@@ -21,14 +21,35 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 1.3rem;
   margin-top: 75px;
   color: white;
+}
+
+.good {
+  background-color: #2cb62c;
+  color: white;
+  padding: 5px 25px;
+  border-radius: 5px;
+}
+
+.bad {
+  background-color: #c71f1f;
+  color: white;
+  padding: 5px 25px;
+  border-radius: 5px;
+}
+
+.neutral {
+  background-color: black;
+  color: white;
+  padding: 5px 25px;
+  border-radius: 5px;
 }
 
 .superhero-cards {
@@ -37,14 +58,14 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: auto;
   padding-top: 70px;
@@ -56,34 +77,34 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 75%;
   padding: 0 10px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   background-color: white;
   margin-bottom: 40px;
 }
 
 .superhero-cards .superhero-card img {
   width: 60%;
-  margin: 5px 0;
+  margin: 15px 0;
   border-radius: 30px;
 }
 
 .superhero-cards .superhero-card .name {
-  padding: 5px 18px;
+  padding: 7px 23px;
   background-color: #3585ee;
   margin: 30px 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-weight: 500;
   color: white;
   text-align: center;
@@ -92,41 +113,49 @@ main {
 .superhero-cards .superhero-card .real-name {
   margin-top: 30px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   text-align: center;
 }
 
 .superhero-cards .superhero-card .f-appear {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   text-align: center;
   padding: 0 10px;
 }
 
 .superhero-cards .superhero-card .alignment {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0 0 30px 0;
+          box-sizing: border-box;
+  margin: 7px 0 30px 0;
   text-align: center;
+}
+
+.superhero-cards .superhero-card .view-stats-btn {
+  margin-bottom: 30px;
+  margin-top: 10px;
+  border: 1px solid black;
+  padding: 6px 17px;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {
   .superhero-cards {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 80%;
   }
   .superhero-cards .superhero-card {
     width: 38%;
     margin: 30px 30px;
-    height: 725px;
+    height: 755px;
   }
   .superhero-cards .superhero-card img {
-    width: 80%;
+    width: 60%;
   }
   .superhero-cards .superhero-card .name,
   .superhero-cards .superhero-card .real-name,
@@ -140,18 +169,18 @@ main {
   .superhero-cards {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .superhero-cards .superhero-card {
     width: 25%;
     margin: 30px 30px;
-    height: 725px;
+    height: 755px;
   }
   .superhero-cards .superhero-card img {
-    width: 60%;
+    width: 45%;
   }
   .superhero-cards .superhero-card .name,
   .superhero-cards .superhero-card .real-name,
@@ -179,7 +208,7 @@ footer input {
   width: 75%;
   padding-left: 25px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Oswald", sans-serif;
   font-size: 1rem;
   outline: none;
@@ -204,9 +233,6 @@ footer button {
   footer input,
   footer button {
     font-size: 1.1rem;
-    -webkit-appearance: none;
-    border-radius: 0;
-    -webkit-border-radius: 0;
   }
 }
 
@@ -221,7 +247,7 @@ body {
   padding-top: 85px;
   padding-bottom: 100px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .results-text {
@@ -235,11 +261,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #444444;
 }
 
